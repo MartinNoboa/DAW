@@ -55,6 +55,7 @@ function suma() {
 }
 
 
+//-------------------------------------------------------------------------problema 3
 
 function numeros () {
     let a = [];
@@ -87,21 +88,35 @@ function mostrarMensaje (contador){
     alert("Cantidad de numeros negativos = " + contador[0] + "\nCantidad de ceros = " + contador[1]+ "\nCantidad de positivos = " + contador[2]);
 }
 
+//-------------------------------------------------------------------------problema 4
 
+function arreglo() {
+    
+}
 
+//-------------------------------------------------------------------------problema 5
 
+function recibirNumero() {
+    let valor = 0;
+    valor = prompt("Ingrese un numero: ");
+    while(isNaN(valor)){
+        valor = prompt("Ingrese un numero: ");
+    }
+    aux = valor.toString(10).split('').map(Number);
+    console.log(aux);
+    mostrar(aux);
+    
+}
 
+function invertirNumero(num) {
+    let aux = [];
+    aux = num.reverse();
+    return aux;
+}
 
-
-
-
-
-
-
-
-
-
-
+function mostrar(num){
+    alert(invertirNumero(num));
+}
 
 
 
