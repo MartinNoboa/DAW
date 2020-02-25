@@ -1,0 +1,45 @@
+body{
+    font: 13px Arial, Helvetica, sans-serif;;
+}
+
+#user_pass, #user_div{
+    text-align: center;
+    margin:30px;
+    font-size: 20px;
+}
+
+label{
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    font-size-adjust: auto;
+    /*border-radius: 15px;*/
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: black;
+}
+
+#sub{
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: tomato;
+    color: white;
+    
+}
+
+button:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
