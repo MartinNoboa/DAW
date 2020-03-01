@@ -20,10 +20,128 @@
            
        </div>
        <div id = "sub">
-           <button type = "submit" onclick="validar()">Validar</button>
+           <button onclick= " validar()" >Validar</button>
        </div>
    </form>
+   <hr>
    
-   <script href = "script.js"></script>
+   <h1>Store</h1>
+   
+   
+   
+   <section id = "catalogo">
+       <div class = "bcont">
+           <img src = "img/elixir.jpg">
+           <div class = "scont">
+               <h1 class = "producto">Cuerdas de guitarra</h1>
+               <p class = "price">$200 </p>
+               <form>
+                   <input id = "cuerdas" type = "number" value = "0">
+               </form>
+           </div>
+        </div>
+       
+       
+       
+       <div class = "bcont">
+           <img src = "img/strap.jpg">
+           <div class = "scont">
+               <h1 class = "producto">Strap de guitarra</h1>
+               <p class = "price">$150</p>
+               <form>
+                   <input id = "strap" type = "number" value = "0">
+               </form>
+           </div>
+       </div>
+       
+       
+       <div class = "bcont">
+           <img src = "img/pick.png">
+           
+              <div class = "scont">
+               <h1>Picks</h1>
+               <p class = "price">$20 </p>
+               <form>
+                   <input id = "picks" type = "number" value = "0">
+               </form>
+              
+           </div>
+           
+       </div>
+    </section>
+    <div  class = "bcont" id = "carrito">
+               
+               <table>
+                  <thead>
+                   <tr>
+                       <th>Articulo</th>
+                       <th>Precio</th>
+                       <th>Cantidad</th>
+                       <th>Total</th>
+                   </tr>                     
+                  </thead>
+                  <tbody>  
+                    <tr>
+                        <td>Picks</td>
+                        <td>$20</td>
+                        <td id = "cp"></td>
+                        <td id = "tp"></td>
+                    </tr>
+                    <tr>
+                        <td>Straps</td>
+                        <td>$150</td>
+                        <td id = "cs"></td>
+                        <td id = "ts"></td>
+                    </tr>
+                    <tr>
+                        <td>Strings</td>
+                        <td>$200</td>
+                        <td id = "cc"></td>
+                        <td id = "tc"></td>
+                    </tr>
+                  </tbody>
+               </table>
+               <div id = "con">
+                    <div class = "resumen">
+                       <h2 >TOTAL</h2>
+                       <h2>IVA</h2>
+                       <h2>Total a pagar</h2>
+                    </div>
+                    <div class = "resumen">
+                       <h2 id = "total">...</h2>
+                       <h2 id = "IVA">...</h2>
+                       <h2 id = "final">...</h2>
+                   </div>
+               </div>
+        
+    </div>        
+               <button id = "add" onclick = "contar()">COMPRAR</button>
+   
+   <hr>
+   
+   
+   <section>
+       <header>
+           
+           <h1>Preguntas</h1>
+       </header>
+       <article>
+           <h2>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h2>
+           <p>Al verificar datos antes de enviarlos, te aseguras que esten en el formato adecuado y asi no gastas recursos de mas.</p>
+       </article>
+       
+       <article>
+           <h3>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h3>
+           <p>Con un ataque XSS te puedes saltar las validaciones de JS. Los ataques XSS (cross site scripting) inyectan un script a la pagina mediante un link o un formulario</p>
+       </article>
+       
+       <article>
+           <h3>
+               Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica? </h3>
+               <p> Es justamente para evitar que el usuario realize ataques o comprometa la pagina que se realiza validacion de datos.</p>
+       </article>
+   </section>
+    <script type = "text/javascript" src = "script.js"></script>
+    <script type = "text/javascript" src = "store.js"></script>
 </body>
 </html>
