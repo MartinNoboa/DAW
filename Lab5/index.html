@@ -35,7 +35,9 @@
            <div class = "scont">
                <h1 class = "producto">Cuerdas de guitarra</h1>
                <p class = "price">$200 </p>
-               <button id= "pd1" class = "add" onclick = "opt1">Añadir al carrito</button>
+               <form>
+                   <input id = "cuerdas" type = "number" value = "0">
+               </form>
            </div>
         </div>
        
@@ -46,25 +48,74 @@
            <div class = "scont">
                <h1 class = "producto">Strap de guitarra</h1>
                <p class = "price">$150</p>
-               <button id= "pd2" class = "add" onclick="opt2">Añadir al carrito</button>
+               <form>
+                   <input id = "strap" type = "number" value = "0">
+               </form>
            </div>
        </div>
        
        
-       <article class = "bcont">
+       <div class = "bcont">
            <img src = "img/pick.png">
            
               <div class = "scont">
                <h1>Picks</h1>
                <p class = "price">$20 </p>
-               <button id= "pd3" class = "add" onclick = "opt3">Añadir al carrito</button>
+               <form>
+                   <input id = "picks" type = "number" value = "0">
+               </form>
               
            </div>
-       </article>
+           
+       </div>
     </section>
-    <div id = "carrito">
+    <div  class = "bcont" id = "carrito">
+               
+               <table>
+                  <thead>
+                   <tr>
+                       <th>Articulo</th>
+                       <th>Precio</th>
+                       <th>Cantidad</th>
+                       <th>Total</th>
+                   </tr>                     
+                  </thead>
+                  <tbody>  
+                    <tr>
+                        <td>Picks</td>
+                        <td>$20</td>
+                        <td id = "cp"></td>
+                        <td id = "tp"></td>
+                    </tr>
+                    <tr>
+                        <td>Straps</td>
+                        <td>$150</td>
+                        <td id = "cs"></td>
+                        <td id = "ts"></td>
+                    </tr>
+                    <tr>
+                        <td>Strings</td>
+                        <td>$200</td>
+                        <td id = "cc"></td>
+                        <td id = "tc"></td>
+                    </tr>
+                  </tbody>
+               </table>
+               <div id = "con">
+                    <div class = "resumen">
+                       <h2 >TOTAL</h2>
+                       <h2>IVA</h2>
+                       <h2>Total a pagar</h2>
+                    </div>
+                    <div class = "resumen">
+                       <h2 id = "total">...</h2>
+                       <h2 id = "IVA">...</h2>
+                       <h2 id = "final">...</h2>
+                   </div>
+               </div>
         
     </div>        
+               <button id = "add" onclick = "contar()">COMPRAR</button>
    
    <hr>
    
