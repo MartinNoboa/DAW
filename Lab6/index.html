@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab6</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+    <p>Sample Text</p>
+    <p class = "watermark">Martin Noboa</p>
+    
+   <hr>
+   
+   <h3>Change Font</h3>
+   <div id = "change" onmouseover="changeFont()">
+   <p >Hover over me</p>
+       
+   </div>
+   
+   <div id = "img">
+       <img id = "penias" src = "img/laspenas.jpg">
+       
+          <div id = "hover">
+           
+       
+           <div id = "text">Las Peñas, Guayquil Ecuador</div>    
+       
+       </div>    
+   </div>
+   
+   <br>
+   
+   <hr>
+   
+   <br>
+   
+   
+   <div id = "preguntas">
+    <article>
+       <header>
+           <h2>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</h2>
+       </header>
+       <ul>
+           <li>Static</li>
+           <li>Relative</li>
+           <li>Fixed</li>
+           <li>Absolute</li>
+           
+       </ul>
+    </article>
+    
+    <article>
+       <header>
+           <h2>¿Cuáles son los valores estándar para la propiedad visibility?</h2>
+       </header>
+       <ul>
+           <li>Visible</li>
+           <li>Hidden</li>
+           <li>Collapse(tables)</li>
+           <li>Inherit</li>
+       </ul>
+    </article>
+
+    <article>
+       <header>
+           <h2>¿Qué es el zIndex y para qué sirve?</h2>
+       </header>
+       <p>La propiedad CSS z-index indica el z-order de un elemento y sus descendientes. Cuando varios elementos se superponen, z-order determina cuales cubren a otros. </p>
+    </article>
+    </div>
+    
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+       <img src = "img/laspenas.jpg" draggable="true" ondragstart="drag(event)"  width="500" height="500"  id="drag1">
+   </div>
+   <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+       
+   </div>
+   
+   
+   <script src = "fontChange.js"></script>
+</body>
+</html>
+
+
+
+<!--sources
+*
+*
+* https://www.w3schools.com/howto/howto_css_image_overlay.asp
+*https://es.learnlayout.com/position.html
+*https://css-tricks.com/almanac/properties/v/visibility/
+----------------------------------------------------------------------------
