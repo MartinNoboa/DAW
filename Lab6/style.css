@@ -1,10 +1,17 @@
 .watermark {
     position: fixed;
-    color:lightgrey;
+    color:lightgray;
+    opacity: 0.7;
     font-size:9em;
     transform:rotate(300deg);
 }
 p{
     font-size: 2em;
 }
+
+hr{
+    border: 2px solid black;
+}
+
+
 
