@@ -1,5 +1,5 @@
 function changeFont() {
-    let t = document.getElementById("text"); 
+    let t = document.getElementById("change"); 
     let timer  = setTimeout(function(){
         t.style.color = "blue";
         t.style.fontSize = "70px";
@@ -9,3 +9,4 @@ function changeFont() {
         clearTimeout(timer);
     }
 }
+
