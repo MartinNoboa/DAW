@@ -47,7 +47,7 @@ function testMedian_2(){
 
 function imprimir($array){
   for($i = 0; $i < count($array); $i++){
-      print_r($array[$i]);
+      print_r($array[$i]." ");
   }
 }
 
@@ -68,28 +68,63 @@ function medianMostrar_1(){
  return median($arreglo1); 
 }
 
-function sortDesc($arreglo){
+function sortAsc(){
+    $arreglo = array(7, 8, 9, 10, 11, 12);
+    sort($arreglo);
+    imprimir($arreglo);   
+}
+
+function sortDesc(){
+    $arreglo = array(7, 8, 9, 10, 11, 12);
     rsort($arreglo);
     imprimir($arreglo);   
 }
 
-function sortAsc($arreglo){
-    sort($arreglo);
-    imprimir($arreglo);
-      
+//--------------------------------------------tabla de valores
+
+function generarTabla($array, $cuadrados, $cubos, $n){
+    for($i = 0; $i <= $n; $i++){
+        echo '<tr>';
+        echo "<td> $array[$i] </td>";
+        echo "<td> $cuadrados[$i] </td>";
+        echo "<td> $cubos[$i] </td>";
+        echo '</tr>';
+    }
+}
+
+function generarNumeros(){
+    $n = 5;
+    $numeros = array();
+    $cuadrados = array();
+    $cubos = array();
+    
+    for($i = 0; $i <= $n; $i++){
+        $numeros[$i] = $i;
+    }
+    
+    for($i = 0; $i <= $n; $i++){
+        $cuadrados[$i] = $numeros[$i]*$numeros[$i];
+    }
+    
+    for($i = 0; $i <= $n; $i++){
+        $cubos[$i] = $numeros[$i]*$numeros[$i]*$numeros[$i];
+    }
+    
+    
+  
+    generarTabla($numeros, $cuadrados, $cubos, $n);
 }
 
 
 
-
-
 //pagina html
-  include("_header.html");
-  include("_top.html");
-  include("_promedio.html");
-  include("_median.html");
-  include("_mostrarNum.html");
-  include("_footer.html")
+    include("_header.html");
+    include("_top.html");
+    include("_promedio.html");
+    include("_median.html");
+    include("_mostrarNum.html");
+    include("_table.html");
+    include("_footer.html");
 
 
 ?>
