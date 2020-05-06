@@ -1,9 +1,9 @@
 <?php
 function connectDB() {
-    $servername = 'localhost';
-    $username = "root";
-    $password = "";
-    $dbname = "jurassicpark";
+    $servername = 'mysql1008.mochahost.com';
+    $username = "dawbdorg_1704052";
+    $password = "1704052";
+    $dbname = "dawbdorg_A01704052";
 
     $con = mysqli_connect($servername, $username, $password, $dbname);
 
