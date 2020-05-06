@@ -3,8 +3,9 @@
     include("_header.html");
 ?>
     
-    
     <div class = "container">
+    <a class="right btn-floating btn-large waves-effect waves-light red" href = "index.php"><i class="material-icons">arrow_back</i></a>
+       
         <h2>Agregar nuevo incidente</h2>  
 
         <form action = "controladorIncidente.php" method = "POST">
